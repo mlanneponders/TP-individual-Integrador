@@ -23,4 +23,5 @@ La UT es lexicamente correcta y no viola ninguna restriccion semantica.
 
 Primeramente el programa declara una funcion llamada printf y luego dentro de la funcion main, inicializa un arreglo de enterors e imprime por pantalla el resultado de 2 expresiones en cuyos operandos estan involucrados el arreglo y la la funcion sizeof.
 
-La salida imprime los caracteres 00. En el arreglo inicializado, se encuentra almacenado el valor entero -1. El primer 0 es resultado de resolver la expresion `sizeof _ - sizeof _[0]`, ya que sizeof _ da como resultado la cantidad de bytes en el arreglo (4), y `sizeof _[0]` el resultado es la cantidad de bytes para almacenar un entero (4). El segundo 0 es resultado de resolver la expresion `sizeof(char) + 0[_]`, ya que `sizeof(char)` da como resultado 1, y el valor almacenado en 0[_] es -1.
+Es semanticamente correcto.
+La salida del programa imprime los caracteres 00.
