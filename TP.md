@@ -4,7 +4,7 @@
 El reemplazo se realiza antes del linkeo. El que lo realiza es el procesador. 
 
 ####Secuencia de tokens:
-`int main (void){ int [:>=<%-!.0,]; int _[] = {-!.0,}; printf("%d%d",sizeof-sizeof_[0],sizeof(char)+0[_]); }`
+`int []={-1,}; printf("%d%d",sizeof - sizeof [0],sizeof(char)+ [0]);`
 
 ####UT lexicamente correcto 
 
